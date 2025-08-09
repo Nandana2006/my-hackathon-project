@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>💰 Finance Tracker</h1>
+
+        <!-- Balance Display -->
+        <div class="balance">
+            <h2>Balance: ₹<span id="balance">0</span></h2>
+        </div>
+
+        <!-- Transaction Form -->
+        <div class="transaction-form">
+            <input type="text" id="desc" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+
+            <!-- Currency Selector -->
+            <select id="currency">
+                <option value="INR">INR ₹</option>
+                <option value="USD">USD $</option>
+                <option value="EUR">EUR €</option>
+            </select>
+
+            <!-- Income / Expense -->
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <!-- Category -->
+            <select id="category">
+                <option value="Salary">Salary</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Bills">Bills</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Payment Method -->
+            <select id="paymentMethod">
+                <option value="Cash">Cash</option>
+                <option value="UPI">UPI</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Net Banking">Net Banking</option>
+            </select>
+
+            <!-- Date Picker -->
+            <input type="date" id="date">
+
+            <!-- Recurring Transaction -->
+            <label>
+                <input type="checkbox" id="recurring"> Recurring
+            </label>
+
+            <!-- Notes -->
+            <textarea id="notes" placeholder="Extra notes (optional)"></textarea>
+
+            <!-- Add Button -->
+            <button id="addBtn">Add</button>
+        </div>
+
+       
+       
+
+        <!-- Transactions List -->
+        <h3>Transactions</h3>
+        <ul id="transactions"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

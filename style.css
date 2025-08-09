@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.balance {
+    background: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.transaction-form {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.transaction-form input, 
+.transaction-form select, 
+.transaction-form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#transactions {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#transactions li {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-left: 5px solid;
+}
+
+.income {
+    border-color: green;
+}
+
+.expense {
+    border-color: red;
+}
